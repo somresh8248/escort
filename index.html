@@ -246,6 +246,331 @@
                 font-size: 11px !important;
             }
         }
+
+        /* =======================================================
+           COMPREHENSIVE RESPONSIVE ENHANCEMENTS
+           ======================================================= */
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Hero Slider Area Responsive Styles */
+        .slider-bg-three {
+            position: relative;
+        }
+
+        .slider-bg-three::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(3, 11, 32, 0.72) 0%, rgba(3, 11, 32, 0.88) 100%) !important;
+            z-index: 1;
+        }
+
+        .video2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .slider-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .slider-content h1 {
+            font-family: 'PT Serif', serif;
+            font-weight: 700;
+            color: #ffffff !important;
+            font-size: 52px;
+            line-height: 1.18;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+
+        .slider-four .s-slider-content p {
+            font-size: 17px;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+            max-width: 580px;
+        }
+
+        .slider-content .slider-btn {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            align-items: center;
+        }
+
+        .slider-content .slider-btn .btn {
+            margin: 0 !important;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Tablet & Laptop (992px - 1199px) */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .slider-content h1 {
+                font-size: 44px;
+                line-height: 1.2;
+            }
+
+            .slider-four .s-slider-content p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+
+        /* Tablets & Mobile (max-width: 991px) */
+        @media (max-width: 991px) {
+            .slider-content h1 {
+                font-size: 38px;
+                line-height: 1.22;
+                margin-bottom: 20px;
+            }
+
+            .slider-four .s-slider-content p {
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 25px;
+            }
+
+            .about-area.pt-120,
+            .booking-area.pt-120,
+            .companion-area.pt-120,
+            .faq-area.pt-115 {
+                padding-top: 80px !important;
+            }
+
+            .about-area.pb-120,
+            .booking-area.pb-120,
+            .companion-area.pb-90,
+            .faq-area.pb-120 {
+                padding-bottom: 70px !important;
+            }
+
+            .service-details-two.pb-105 {
+                padding-bottom: 70px !important;
+            }
+
+            .section-title h2,
+            .about-title h2 {
+                font-size: 32px !important;
+                line-height: 1.25 !important;
+            }
+
+            /* Our Services Section Responsive Optimization */
+            .sr-tw-ul li:nth-child(2),
+            .sr-thr-ul li:nth-child(2) {
+                margin-left: 0 !important;
+            }
+
+            .sr-tw-ul li {
+                padding: 24px 20px !important;
+                display: flex !important;
+                align-items: flex-start !important;
+                gap: 16px !important;
+                background: #ffffff;
+                box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+                margin-bottom: 20px !important;
+                border-radius: 10px;
+            }
+
+            .sr-tw-ul li .icon,
+            .sr-tw-ul li .icon-right {
+                width: 60px !important;
+                min-width: 60px !important;
+                flex: 0 0 60px !important;
+                padding: 0 !important;
+                text-align: center;
+            }
+
+            .sr-tw-ul li .icon img,
+            .sr-tw-ul li .icon-right img {
+                width: 48px !important;
+                height: auto !important;
+            }
+
+            .sr-tw-ul li .text {
+                flex: 1 1 auto !important;
+                padding-top: 0 !important;
+            }
+
+            .sr-tw-ul li .text h4 {
+                font-size: 19px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .sr-tw-ul li .text p {
+                font-size: 14px !important;
+                line-height: 22px !important;
+            }
+
+            .opening-time {
+                margin-left: 0 !important;
+                margin-top: 40px !important;
+                padding: 35px 25px !important;
+            }
+        }
+
+        /* Mobile Screens (max-width: 767px) */
+        @media (max-width: 767px) {
+            .slider-bg.slider-four {
+                min-height: auto !important;
+                padding-top: 130px !important;
+                padding-bottom: 75px !important;
+            }
+
+            .slider-content.s-slider-content.slider-text-2 {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                text-align: left;
+            }
+
+            .slider-content h1 {
+                font-size: 30px !important;
+                line-height: 1.25 !important;
+                margin-bottom: 16px !important;
+                letter-spacing: 0 !important;
+            }
+
+            .slider-four .s-slider-content p {
+                font-size: 15px !important;
+                line-height: 24px !important;
+                margin-bottom: 24px !important;
+            }
+
+            .slider-content .slider-btn {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                gap: 12px !important;
+                margin-top: 15px !important;
+            }
+
+            .slider-content .slider-btn .btn {
+                padding: 13px 24px !important;
+                font-size: 13px !important;
+                letter-spacing: 0.5px !important;
+            }
+
+            .section-title h2,
+            .about-title h2 {
+                font-size: 26px !important;
+                line-height: 1.28 !important;
+            }
+
+            .section-title h5,
+            .about-title h5 {
+                font-size: 16px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .companion-card {
+                padding: 26px 20px !important;
+            }
+
+            .companion-card h4 {
+                font-size: 19px !important;
+            }
+
+            .opening-time h3 {
+                font-size: 24px !important;
+            }
+
+            .opening-time .text {
+                font-size: 15px !important;
+            }
+
+            .faq-btn {
+                padding: 16px 45px 16px 20px !important;
+                font-size: 15px !important;
+                line-height: 1.4 !important;
+            }
+
+            .faq-wrap .card-body {
+                padding: 18px 20px !important;
+                font-size: 14px !important;
+                line-height: 24px !important;
+            }
+        }
+
+        /* Extra Small Mobile (max-width: 480px) */
+        @media (max-width: 480px) {
+            .slider-bg.slider-four {
+                padding-top: 115px !important;
+                padding-bottom: 60px !important;
+            }
+
+            .slider-content h1 {
+                font-size: 25px !important;
+                line-height: 1.28 !important;
+                margin-bottom: 14px !important;
+            }
+
+            .slider-four .s-slider-content p {
+                font-size: 14px !important;
+                line-height: 22px !important;
+                margin-bottom: 20px !important;
+            }
+
+            .slider-content .slider-btn {
+                gap: 10px !important;
+            }
+
+            .slider-content .slider-btn .btn {
+                padding: 11px 20px !important;
+                font-size: 12px !important;
+            }
+
+            .sr-tw-ul li {
+                padding: 18px 14px !important;
+                gap: 12px !important;
+            }
+
+            .sr-tw-ul li .icon,
+            .sr-tw-ul li .icon-right {
+                width: 50px !important;
+                min-width: 50px !important;
+                flex: 0 0 50px !important;
+            }
+
+            .sr-tw-ul li .icon img,
+            .sr-tw-ul li .icon-right img {
+                width: 40px !important;
+            }
+
+            .sr-tw-ul li .text h4 {
+                font-size: 17px !important;
+            }
+
+            .sr-tw-ul li .text p {
+                font-size: 13px !important;
+                line-height: 20px !important;
+            }
+
+            .section-title h2,
+            .about-title h2 {
+                font-size: 23px !important;
+            }
+
+            .opening-time {
+                padding: 24px 16px !important;
+            }
+
+            .opening-time h3 {
+                font-size: 20px !important;
+            }
+        }
     </style>
 </head>
 
@@ -400,16 +725,16 @@
                         <div class="row justify-content-center align-items-center">
                             <div class="col-lg-6 col-md-6">
                                 <div class="slider-content s-slider-content slider-text-2 mt-20">
-                                    <h5 data-animation="fadeInUp" data-delay=".4s">Spa & Welness Salon </h5>
-                                    <h2 data-animation="fadeInUp" data-delay=".4s">Make Your Skin<br>Shine & Glowing
-                                    </h2>
-                                    <p data-animation="fadeInUp" data-delay=".6s">Experience the divine essence of
-                                        authentic Ayurvedic therapies and luxury Indian botanicals. Enriched with pure
-                                        Chandan, Kashmiri Kesar, and therapeutic herbal oils to restore your natural
-                                        glow and timeless radiance.</p>
+                                    <h1 data-animation="fadeInUp" data-delay=".4s">Male Companion<br
+                                            class="d-none d-md-inline"> Services in Bhubaneswar</h1>
+                                    <p data-animation="fadeInUp" data-delay=".6s">Welcome to our male companion services
+                                        in Bhubaneswar, Odisha, offering personalized companionship for adult women
+                                        seeking a friendly, respectful, and discreet experience. Whether you are looking
+                                        for a male companion for women in Bhubaneswar or male companion services in
+                                        Cuttack, we aim to make your enquiry comfortable and straightforward.</p>
 
                                     <div class="slider-btn mt-30">
-                                        <a href="contact.html" class="btn ss-btn mr-15">Discover More</a>
+                                        <a href="contact.html" class="btn ss-btn">Discover More</a>
                                         <a href="contact.html" class="btn ss-btn active">Book Now</a>
                                     </div>
 
@@ -421,7 +746,7 @@
                         </div>
                     </div>
                     <!-- video -->
-                    <video id="my-video" class="video2" muted loop autoplay>
+                    <video id="my-video" class="video2" muted loop autoplay playsinline webkit-playsinline>
                         <source src="img/slider/slider-vedio.mp4" type="video/mp4">
                         <source src="img/slider/slider-vedio.ogv" type="video/ogg">
                         <source src="img/slider/slider-vedio.webm" type="video/webm">
@@ -496,17 +821,18 @@
                             data-animation="fadeInRight" data-delay=".4s">
                             <div class="about-title second-title pb-25">
                                 <h5>About Us</h5>
-                                <h2>Best Way To Care Your Skin</h2>
+                                <h2 style="font-size: 35px;">Male Companion Services in Bhubaneswar & Cuttack</h2>
                             </div>
-                            <p>Rooted in India's sacred Vedic healing traditions, Fallspa brings you the ultimate
-                                holistic care through time-honored Ayurvedic wisdom and modern luxury wellness. We
-                                hand-blend natural therapies using cold-pressed virgin oils, pure Mysore sandalwood
-                                (Chandan), organic Kashmiri saffron (Kesar), and potent Himalayan botanicals to purify,
-                                hydrate, and restore your skin's natural balance.</p>
-                            <p>From authentic bridal Ubtans and rejuvenating Kumkumadi facials to deeply calming Kerala
-                                Abhyanga therapies, each ritual is mindfully personalized to your unique Dosha
-                                constitution. Surrender to peaceful tranquility as our certified Ayurvedic practitioners
-                                rejuvenate your mind, body, and spirit with India's purest holistic wellness rituals.
+                            <p>We offer Male Companion Services in Bhubaneswar and Cuttack, Odisha, for adult women
+                                seeking friendly, respectful, and discreet companionship. Our services include Male
+                                Escort Services in Bhubaneswar, Male Jigolo Services in Bhubaneswar, and Male Companion
+                                for Women in Bhubaneswar, with options for social outings, special occasions, and
+                                private adult companionship.</p>
+                            <p>We also provide enquiries for Male Body Massage in Bhubaneswar, Professional Body Massage
+                                for Women, and Male Masseur for Women in Bhubaneswar. Whether you are looking for a Male
+                                Companion for Ladies in Odisha or a Male Intimate Companion in Bhubaneswar, we emphasize
+                                mutual consent, personal boundaries, comfort, and privacy. Contact us to learn about
+                                availability and service details in Bhubaneswar and Cuttack.
                             </p>
                             <div class="slider-btn mt-20">
                                 <a href="about.html" class="btn ss-btn smoth-scroll">Explore More</a>
@@ -538,29 +864,23 @@
 
                             <ul class="sr-tw-ul ">
                                 <li>
-                                    <div class="icon-right"><img src="img/icon/fe-icon01.png" alt="icon01"></div>
-                                    <div class="text">
-                                        <h4><a href="single-service.html">Facials</a></h4>
-                                        <p>Traditional Kumkumadi, Chandan & Haldi radiance facials crafted to deeply
-                                            detoxify, hydrate, and impart a golden Indian glow.</p>
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="icon-right"><img src="img/icon/fe-icon05.png" alt="icon01"></div>
-                                    <div class="text">
-                                        <h4><a href="single-service.html">Mineral Baths</a></h4>
-                                        <p>Soothing pink Himalayan rock salt and fragrant damask rose petal soak to
-                                            relieve muscular fatigue and melt away stress.</p>
-                                    </div>
-
-                                </li>
-                                <li>
                                     <div class="icon-right"><img src="img/icon/fe-icon07.png" alt="icon01"></div>
                                     <div class="text">
-                                        <h4><a href="single-service.html">Massage</a></h4>
-                                        <p>Authentic Kerala Abhyanga and Shirodhara head massage with warm medicated
-                                            herbal oils to restore harmony and calm vital energies.</p>
+                                        <h4><a href="single-service.html">Male Body Massage for Women</a></h4>
+                                        <p>Rejuvenating full-body massage therapies tailored exclusively for women,
+                                            combining soothing strokes and warm aromatic oils to relieve stress,
+                                            fatigue, and muscular tension.</p>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="icon-right"><img src="img/icon/fe-icon08.png" alt="icon01"></div>
+                                    <div class="text">
+                                        <h4><a href="single-service.html">Personalized Fantasy Experiences for
+                                                Adults</a></h4>
+                                        <p>Customized adult experiences designed around your desires, offering
+                                            affectionate romantic companionship, private roleplay, and emotional warmth
+                                            in complete discretion.</p>
                                     </div>
 
                                 </li>
@@ -583,27 +903,22 @@
 
                             <ul class="sr-tw-ul sr-thr-ul">
                                 <li>
+                                    <div class="icon"><img src="img/icon/fe-icon01.png" alt="icon01"></div>
+                                    <div class="text pt-10">
+                                        <h4><a href="single-service.html">Relaxing Head Massage Services</a></h4>
+                                        <p>Calming scalp, temple, and neck massage with warm herbal oils to dissolve
+                                            mental stress, relieve fatigue, and leave you feeling peaceful, refreshed,
+                                            and deeply relaxed.</p>
+                                    </div>
+                                </li>
+                                <li>
                                     <div class="icon"><img src="img/icon/fe-icon04.png" alt="icon01"></div>
                                     <div class="text pt-10">
-                                        <h4><a href="single-service.html">Body Treatments</a></h4>
-                                        <p>Exfoliating bridal Ubtan, wild turmeric body polish, and healing neem wraps
-                                            for silky smooth, toned, and nourished skin.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="img/icon/fe-icon06.png" alt="icon01"></div>
-                                    <div class="text pt-10">
-                                        <h4><a href="single-service.html">Waxing</a></h4>
-                                        <p>Ultra-gentle Rica wax and organic Indian sugarcane waxing infused with
-                                            soothing aloe vera and chamomile for sensitive skin.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon"><img src="img/icon/fe-icon08.png" alt="icon01"></div>
-                                    <div class="text pt-10">
-                                        <h4><a href="single-service.html">Geothermal Spa</a></h4>
-                                        <p>Rejuvenating volcanic basalt hot stone therapy infused with therapeutic
-                                            Dhanwantharam oil to release deep muscular knots.</p>
+                                        <h4><a href="single-service.html">Personal Entertainer & Male Companion
+                                                Services</a></h4>
+                                        <p>Sophisticated, charming, and attentive male companions for dinner dates,
+                                            private parties, social events, or quiet evenings, ensuring engaging
+                                            conversation and warmth.</p>
                                     </div>
                                 </li>
 
@@ -630,7 +945,7 @@
                             <div class="section-title center-align">
                                 <h5>Get In Touch</h5>
                                 <h2>
-                                    Get Appointment
+                                    Get Yours
                                 </h2>
                                 <p>Reserve your bespoke Ayurvedic retreat today. Connect with our certified vaidyas and
                                     wellness therapists across Mumbai, Delhi NCR, Bengaluru, and pan-India centers for a
@@ -689,7 +1004,7 @@
                             <div class="open-img">
                                 <img src="img/bg/open-box-img.png" alt="icon01">
                             </div>
-                            <h3>Opening Hours</h3>
+                            <h3>According To Your Time</h3>
                             <div class="text">
                                 <div class="left-text">Monday to Friday:</div>
                                 <div class="right-text">09:00 am – 10:00 pm</div>
@@ -710,462 +1025,6 @@
             </div>
         </section>
         <!-- booking-area-end -->
-
-        <!-- editor-choice -->
-        <section id="editor-choice" class="product-slider pt-120 pb-90 fix"
-            style="background: url(img/bg/product-bg.png); background-size: contain; background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title center-align mb-50 text-center">
-                            <h5>Our Products</h5>
-                            <h2>
-                                Best For Skin Care
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="row home-blog-active">
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="product mb-40">
-                            <div class="product__img">
-                                <a href="shop-details.html"><img src="img/shop/img1.jpg" alt=""></a>
-                                <div class="product-action text-center">
-
-                                    <a href="shop-details.html">Add Cart</a>
-
-                                </div>
-                            </div>
-                            <div class="product__content pt-30">
-
-                                <h4 class="pro-title"><a href="shop-details.html">Balancing Gel</a></h4>
-                                <div class="price">
-                                    <span class="old-price">₹1,299</span>
-                                    <span>₹899</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="product mb-40">
-                            <div class="product__img">
-                                <a href="shop-details.html"><img src="img/shop/img2.jpg" alt=""></a>
-                                <div class="product-action text-center">
-
-                                    <a href="shop-details.html">Add Cart</a>
-
-                                </div>
-                            </div>
-                            <div class="product__content pt-30">
-
-                                <h4 class="pro-title"><a href="shop-details.html">Beauty Cream</a></h4>
-                                <div class="price">
-                                    <span class="old-price">₹1,499</span>
-                                    <span>₹999</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="product mb-40">
-                            <div class="product__img">
-                                <a href="shop-details.html"><img src="img/shop/img3.jpg" alt=""></a>
-                                <div class="product-action text-center">
-
-                                    <a href="shop-details.html">Add Cart</a>
-
-                                </div>
-                            </div>
-                            <div class="product__content pt-30">
-
-                                <h4 class="pro-title"><a href="shop-details.html">Dry Skin</a></h4>
-                                <div class="price">
-                                    <span class="old-price">₹1,199</span>
-                                    <span>₹799</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="product mb-40">
-                            <div class="product__img">
-                                <a href="shop-details.html"><img src="img/shop/img4.jpg" alt=""></a>
-                                <div class="product-action text-center">
-
-                                    <a href="shop-details.html">Add Cart</a>
-
-                                </div>
-                            </div>
-                            <div class="product__content pt-30">
-
-                                <h4 class="pro-title"><a href="shop-details.html">Fairness Cream</a></h4>
-                                <div class="price">
-                                    <span class="old-price">₹1,599</span>
-                                    <span>₹1,099</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="product mb-40">
-                            <div class="product__img">
-                                <a href="shop-details.html"><img src="img/shop/img5.jpg" alt=""></a>
-                                <div class="product-action text-center">
-
-                                    <a href="shop-details.html">Add Cart</a>
-
-                                </div>
-                            </div>
-                            <div class="product__content pt-30">
-
-                                <h4 class="pro-title"><a href="shop-details.html">Agrofarm Onion</a></h4>
-                                <div class="price">
-                                    <span class="old-price">₹999</span>
-                                    <span>₹699</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-
-                        <div class="product mb-40">
-                            <div class="product__img">
-                                <a href="shop-details.html"><img src="img/shop/img6.jpg" alt=""></a>
-                                <div class="product-action text-center">
-
-                                    <a href="shop-details.html">Add Cart</a>
-
-                                </div>
-                            </div>
-                            <div class="product__content pt-30">
-
-                                <h4 class="pro-title"><a href="shop-details.html">Agrofarm Onion</a></h4>
-                                <div class="price">
-                                    <span>₹1,299</span>
-                                    <span class="old-price">₹1,899</span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- case-study-end -->
-        <!-- pricing-area -->
-        <section id="pricing" class="pricing-area pb-60 fix p-relative"
-            style="background: url(img/bg/price-bg.png); background-size: contain; background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center mb-50 wow fadeInDown animated" data-animation="fadeInDown"
-                            data-delay=".4s">
-                            <h5>Choose Package</h5>
-                            <h2>
-                                Our Pricing Plan
-                            </h2>
-
-                        </div>
-
-                    </div>
-                    <div class="row pcolor">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="pricing-box pricing-box2 text-center mb-60">
-                                <div class="pricing-head">
-                                    <h3>Comfort Relax</h3>
-                                    <div class="price-count">
-                                        <h2>₹2,499 <span>/ Session</span></h2>
-                                        <p>Gentle Ayurvedic rejuvenation with traditional herbal oils for complete daily
-                                            stress relief.</p>
-                                    </div>
-                                    <hr>
-                                </div>
-
-                                <div class="pricing-body mt-20 mb-30 text-left">
-                                    <ul>
-                                        <li>60-Min Abhyanga Herbal Massage</li>
-                                        <li>Kashmiri Saffron Welcome Drink</li>
-                                        <li>Warm Medicated Herbal Steam Bath</li>
-                                        <li>Personalized Dosha Consultation</li>
-                                        <li>Ayurvedic Herbal Green Tea Infusion</li>
-                                    </ul>
-                                </div>
-
-                                <div class="pricing-btn">
-                                    <a href="contact.html" class="btn ss-btn">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="pricing-box pricing-box2 active text-center mb-60">
-                                <div class="pricing-head">
-                                    <h3>Premium Spa</h3>
-                                    <div class="price-count">
-                                        <h2>₹4,999 <span>/ Session</span></h2>
-                                        <p>Comprehensive mind-body revitalization with sacred Vedic therapies and golden
-                                            glow facials.</p>
-                                    </div>
-                                    <hr>
-                                </div>
-
-                                <div class="pricing-body mt-20 mb-30 text-left">
-                                    <ul>
-                                        <li>75-Min Marma Deep Tissue Therapy</li>
-                                        <li>Pure Kumkumadi Golden Glow Facial</li>
-                                        <li>30-Min Calming Shirodhara Oil Flow</li>
-                                        <li>Himalayan Mineral Bath & Jacuzzi</li>
-                                        <li>Customized Diet & Lifestyle Chart</li>
-                                    </ul>
-                                </div>
-
-                                <div class="pricing-btn">
-                                    <a href="contact.html" class="btn ss-btn">Choose Plan</a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="pricing-box pricing-box2 text-center mb-60">
-                                <div class="pricing-head">
-
-                                    <h3>Luxury Retreat</h3>
-                                    <div class="price-count">
-                                        <h2>₹7,999 <span>/ Session</span></h2>
-                                        <p>The ultimate royal Indian indulgence uniting ancient Rasayana therapies with
-                                            bespoke luxury.</p>
-                                    </div>
-                                    <hr>
-                                </div>
-
-                                <div class="pricing-body mt-20 mb-30 text-left">
-                                    <ul>
-                                        <li>120-Min Royal Kerala Panchakarma Ritual</li>
-                                        <li>24K Swarna & Chandan Body Polishing</li>
-                                        <li>Geothermal Volcanic Stone Therapy</li>
-                                        <li>Private Rose Petal Hydrotherapy Bath</li>
-                                        <li>Complimentary Luxury Ayurvedic Gift Hamper</li>
-                                    </ul>
-                                </div>
-
-                                <div class="pricing-btn">
-                                    <a href="contact.html" class="btn ss-btn">Choose Plan</a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- pricing-area-end -->
-        <!-- gallery-area -->
-        <section id="work" class="pt-120 pb-110"
-            style="background: url(img/bg/gallery-bg.png); background-size: cover; background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center mb-40 wow fadeInDown animated" data-animation="fadeInDown"
-                            data-delay=".4s">
-                            <h5>Our Gallery</h5>
-                            <h2>
-                                See Our Portfolio
-                            </h2>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="masonry-gallery-huge portfolio ">
-                            <div class="grid col4">
-
-
-                                <div class="grid-item hover-zoomin banking">
-                                    <a class="popup-image" href="img/gallery/protfolio-img01.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img01.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img02.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img02.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img03.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img03.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
-                                <div class="grid-item hover-zoomin insurance">
-                                    <a class="popup-image" href="img/gallery/protfolio-img04.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img04.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="grid-item hover-zoomin banking insurance">
-                                    <a class="popup-image" href="img/gallery/protfolio-img05.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img05.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img06.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img06.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img07.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img07.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
-                                <div class="grid-item hover-zoomin financial">
-                                    <a class="popup-image" href="img/gallery/protfolio-img08.png">
-                                        <figure class="gallery-image">
-                                            <img src="img/gallery/protfolio-img08.png" alt="img" class="img">
-                                        </figure>
-                                    </a>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-        <!-- gallery-area-end -->
-        <!-- testimonial-area -->
-        <section class="testimonial-area pt-120 p-relative fix"
-            style="background: url(img/bg/test-bg.png); background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="section-title mb-50 wow fadeInDown animated" data-animation="fadeInDown"
-                            data-delay=".4s">
-                            <h5>Our Testimonial</h5>
-                            <h2>
-                                What Our Clients Says
-                            </h2>
-                            <p class="mt-15">Discover genuine reviews from our cherished patrons across India who
-                                embraced peace, restored balance, and rediscovered their natural glow at Fallspa.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-8">
-                        <div class="testimonial-active">
-                            <div class="single-testimonial">
-                                <div class="testi-author">
-                                    <img src="img/testimonial/testi_avatar.png" alt="img">
-                                    <div class="ta-info">
-                                        <h6>Jina Nilson</h6>
-                                        <span>Verified Guest, Mumbai</span>
-                                    </div>
-                                </div>
-                                <p>“The Shirodhara and herbal Abhyanga therapy at Fallspa was truly transformative.
-                                    After exhausting work weeks in Mumbai, the tranquil ambiance and authentic Ayurvedic
-                                    oils completely melted away my fatigue and insomnia.”</p>
-
-                                <div class="qt-img">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="testi-author">
-                                    <img src="img/testimonial/testi_avatar_02.png" alt="img">
-                                    <div class="ta-info">
-                                        <h6>Braitly Dcosta</h6>
-                                        <span>Verified Guest, Goa</span>
-                                    </div>
-                                </div>
-                                <p>“I booked their signature bridal Ubtan and Kumkumadi facial before my wedding
-                                    celebrations. The natural glow on my skin was remarkable! The therapists are deeply
-                                    knowledgeable in traditional Indian holistic care.”</p>
-
-                                <div class="qt-img">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="testi-author">
-                                    <img src="img/testimonial/testi_avatar.png" alt="img">
-                                    <div class="ta-info">
-                                        <h6>Jina Nilson</h6>
-                                        <span>Verified Guest, Bengaluru</span>
-                                    </div>
-                                </div>
-                                <p>“The pink Himalayan mineral bath paired with Kerala herbal steam therapy relieved all
-                                    my chronic back stiffness. It is by far the most peaceful, authentically rooted
-                                    luxury wellness sanctuary in India.”</p>
-
-                                <div class="qt-img">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
-                                </div>
-                            </div>
-                            <div class="single-testimonial">
-                                <div class="testi-author">
-                                    <img src="img/testimonial/testi_avatar_02.png" alt="img">
-                                    <div class="ta-info">
-                                        <h6>Braitly Dcosta</h6>
-                                        <span>Verified Guest, New Delhi</span>
-                                    </div>
-                                </div>
-                                <p>“Exceptional hospitality and authentic Ayurvedic formulations. The therapists took
-                                    time to understand my Dosha balance. From the warm Kesar welcome tea to the soothing
-                                    foot reflexology, every detail was pure bliss.”</p>
-
-                                <div class="qt-img">
-                                    <img src="img/testimonial/qt-icon.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- testimonial-area-end -->
 
         <!-- companion-services-area -->
         <section id="companion-services" class="companion-area pt-120 pb-90 p-relative fix"
@@ -1391,106 +1250,6 @@
             </div>
         </section>
         <!-- faq-area-end -->
-        <!-- blog-area -->
-        <section id="blog" class="blog-area p-relative fix pt-90 pb-90"
-            style="background: url(img/bg/blog-bg.png); background-position: center center; background-repeat: no-repeat;">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-12">
-                        <div class="section-title center-align mb-50 text-center wow fadeInDown animated"
-                            data-animation="fadeInDown" data-delay=".4s">
-                            <h5>Our Blog</h5>
-                            <h2>
-                                Latest Blog & News
-                            </h2>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-post2 hover-zoomin mb-30 wow fadeInUp animated" data-animation="fadeInUp"
-                            data-delay=".4s">
-                            <div class="blog-thumb2">
-                                <a href="blog-details.html"><img src="img/blog/inner_b1.jpg" alt="img"></a>
-                            </div>
-                            <div class="blog-content2">
-                                <div class="date-home">
-                                    Ayurveda
-                                </div>
-                                <div class="b-meta">
-                                    <div class="meta-info">
-                                        <ul>
-                                            <li><i class="fal fa-calendar-alt"></i> 24th March 2021</li>
-                                            <li><i class="fal fa-user"></i> By Dr. Sharma</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h4><a href="blog-details.html">The Ancient Art of Abhyanga: Daily Self-Massage Rituals
-                                        for Vitality</a></h4>
-                                <div class="blog-btn"><a href="blog-details.html">Read More <i
-                                            class="far fa-long-arrow-right"></i></a></div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-post2 mb-30 hover-zoomin wow fadeInUp animated" data-animation="fadeInUp"
-                            data-delay=".4s">
-                            <div class="blog-thumb2">
-                                <a href="blog-details.html"><img src="img/blog/inner_b2.jpg" alt="img"></a>
-                            </div>
-                            <div class="blog-content2">
-                                <div class="date-home">
-                                    Skin Care
-                                </div>
-                                <div class="b-meta">
-                                    <div class="meta-info">
-                                        <ul>
-                                            <li><i class="fal fa-calendar-alt"></i> 24th March 2021</li>
-                                            <li><i class="fal fa-user"></i> By Priya Nair</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h4><a href="blog-details.html">Kumkumadi Tailam: The Golden Ayurvedic Secret to Radiant
-                                        Skin</a></h4>
-                                <div class="blog-btn"><a href="blog-details.html">Read More <i
-                                            class="far fa-long-arrow-right"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-post2 mb-30 hover-zoomin wow fadeInUp animated" data-animation="fadeInUp"
-                            data-delay=".4s">
-                            <div class="blog-thumb2">
-                                <a href="blog-details.html"><img src="img/blog/inner_b3.jpg" alt="img"></a>
-                            </div>
-                            <div class="blog-content2">
-                                <div class="date-home">
-                                    Wellness
-                                </div>
-                                <div class="b-meta">
-                                    <div class="meta-info">
-                                        <ul>
-                                            <li><i class="fal fa-calendar-alt"></i> 24th March 2021</li>
-                                            <li><i class="fal fa-user"></i> By Rajesh Verma</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <h4><a href="blog-details.html">Himalayan Salt Baths & Hydrotherapy: Rejuvenating Mind
-                                        and Body</a></h4>
-                                <div class="blog-btn"><a href="blog-details.html">Read More <i
-                                            class="far fa-long-arrow-right"></i></a></div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-        <!-- blog-area-end -->
 
     </main>
     <!-- main-area-end -->
